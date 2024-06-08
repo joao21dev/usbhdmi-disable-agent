@@ -12,3 +12,4 @@ C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\ne
 C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net8.0\USBHDMIDisableAgent.pdb
 C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net8.0\USBHDMIDisableAgent.genruntimeconfig.cache
 C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net8.0\ref\USBHDMIDisableAgent.dll
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net8.0\USBHDMIDisableAgent.sourcelink.json
