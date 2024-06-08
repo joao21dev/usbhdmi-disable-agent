@@ -7,10 +7,14 @@ namespace USBStateProgram
     {
         private USBControlService _usbControlService;
         private HttpListener _listener;
+        private RestartService _restartService;
+
 
         public HTTPServer(USBControlService usbControlService)
         {
             _usbControlService = usbControlService;
+            _restartService = new RestartService();
+
 
             _listener = new HttpListener();
             _listener.Prefixes.Add("http://localhost:8000/");
@@ -41,6 +45,11 @@ namespace USBStateProgram
                 {
                     string startValue = _usbControlService.GetUSBHUB3Start();
                     responseContent = $"<html><body>O valor inicial do USBHUB3 é: {startValue}</body></html>";
+                }
+                else if (request.RawUrl == "/restartPC")
+                {
+                    _restartService.RestartPC();
+                    responseContent = "<html><body>PC será reiniciado.</body></html>";
                 }
 
                 HttpListenerResponse response = context.Response;
