@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("USBHDMIDisableAgent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc874831b9dcc9a702ce3b48a4783675736b9708")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd83cf05ded6b505be29c3809d9742103fbb0551")]
 [assembly: System.Reflection.AssemblyProductAttribute("USBHDMIDisableAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("USBHDMIDisableAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
