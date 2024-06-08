@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+    <assemblyIdentity
+            version="1.0.0.0"
+            processorArchitecture="X86"
+            name="controlpanel"
+            type="win32" />
+    <description>Elevate execution level</description>
+    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+        <security>
+            <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+                <!-- UAC Manifest Options
+                    If you want to change the Windows User Account Control level modify the
+                    requestedExecutionLevel node. Do not modify the autoElevate node. If you want to 
+                    auto-elevate the sample modify the requestedExecutionLevel attribute's 
+                    level to "highestAvailable" or "requireAdministrator". -->
+                <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />
+            </requestedPrivileges>
+        </security>
+    </trustInfo>
+</assembly>

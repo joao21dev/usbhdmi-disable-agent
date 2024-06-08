@@ -1,0 +1,14 @@
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\bin\Debug\net6.0\USBHDMIDisableAgent.exe
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\bin\Debug\net6.0\USBHDMIDisableAgent.deps.json
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\bin\Debug\net6.0\USBHDMIDisableAgent.runtimeconfig.json
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\bin\Debug\net6.0\USBHDMIDisableAgent.dll
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\bin\Debug\net6.0\USBHDMIDisableAgent.pdb
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.AssemblyInfoInputs.cache
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.AssemblyInfo.cs
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.csproj.CoreCompileInputs.cache
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.dll
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\refint\USBHDMIDisableAgent.dll
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.pdb
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\USBHDMIDisableAgent.genruntimeconfig.cache
+C:\Users\JoãoPedroSilvaMassar\Documents\POC-MA\USBHDMIDisableAgent\obj\Debug\net6.0\ref\USBHDMIDisableAgent.dll

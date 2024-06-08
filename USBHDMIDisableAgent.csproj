@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="System.Net.cs" />
+    <Compile Remove="USBManager.cs" />
+    <Compile Remove="USBStateProgram.cs" />
+  </ItemGroup>
+
+</Project>
