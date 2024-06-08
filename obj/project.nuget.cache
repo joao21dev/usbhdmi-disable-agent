@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NCEDcot0suzhZ8q3IFzpmtlvDh1LngnsUYCD1IqPBoFQok7Vxa0HXNDUVob8LFjCP6xh4TJgrw273ByaHKSsnQ==",
+  "dgSpecHash": "QY+/9n7Qhyw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\USBHDMIDisableAgent.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\USBHDMIDisableAgent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JoãoPedroSilvaMassar\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\JoãoPedroSilvaMassar\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

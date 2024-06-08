@@ -10,7 +10,8 @@ namespace USBStateProgram
 
             // Inicializar objetos
             var usbControlService = new USBControlService();
-            var httpServer = new HTTPServer(usbControlService);
+            var monitorService = new MonitorService();   // Adicionar esta linha
+            var httpServer = new HTTPServer(usbControlService, monitorService); // Modificar esta linha
 
             // Iniciar o servidor HTTP
             httpServer.Start();

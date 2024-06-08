@@ -11,6 +11,11 @@
     <Compile Remove="USBManager.cs" />
     <Compile Remove="USBStateProgram.cs" />
     <Compile Remove=".gitignore.cs" />
+    <Compile Remove="MonitorServie.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="8.0.0" />
   </ItemGroup>
 
 </Project>

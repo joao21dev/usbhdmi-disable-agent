@@ -8,13 +8,13 @@ namespace USBStateProgram
         private USBControlService _usbControlService;
         private HttpListener _listener;
         private RestartService _restartService;
+        private MonitorService _monitorService;
 
-
-        public HTTPServer(USBControlService usbControlService)
+        public HTTPServer(USBControlService usbControlService, MonitorService monitorService)
         {
             _usbControlService = usbControlService;
             _restartService = new RestartService();
-
+            _monitorService = monitorService;
 
             _listener = new HttpListener();
             _listener.Prefixes.Add("http://localhost:8000/");
@@ -29,27 +29,32 @@ namespace USBStateProgram
             {
                 HttpListenerContext context = _listener.GetContext();
                 HttpListenerRequest request = context.Request;
-                string responseContent = "<html><body>OK</body></html>";
-
-                if (request.RawUrl == "/disableUSB")
+                string responseContent = "OK";
+                
+                if (request.RawUrl == "/disableUSB" && request.HttpMethod == "POST")
                 {
                     _usbControlService.DisableUSB();
-                    responseContent = "<html><body>Dispositivos USB desabilitados</body></html>";
+                    responseContent = "Dispositivos USB desabilitados";
                 }
-                else if (request.RawUrl == "/enableUSB")
+                else if (request.RawUrl == "/enableUSB" && request.HttpMethod == "POST")
                 {
                     _usbControlService.EnableUSB();
-                    responseContent = "<html><body>Dispositivos USB habilitados</body></html>";
+                    responseContent = "Dispositivos USB habilitados";
                 }
-                else if (request.RawUrl == "/getUSBHUB3Start")
+                else if (request.RawUrl == "/isUsbDisable")
                 {
                     string startValue = _usbControlService.GetUSBHUB3Start();
-                    responseContent = $"<html><body>O valor inicial do USBHUB3 é: {startValue}</body></html>";
+                    responseContent = (startValue == "4").ToString();
                 }
                 else if (request.RawUrl == "/restartPC")
                 {
                     _restartService.RestartPC();
-                    responseContent = "<html><body>PC será reiniciado.</body></html>";
+                    responseContent = "PC será reiniciado.";
+                }
+                else if (request.RawUrl == "/isSecondMonitorConnected")
+                {
+                    bool isSecondMonitorConnected = _monitorService.IsSecondMonitorConnected();
+                    responseContent = isSecondMonitorConnected.ToString();
                 }
 
                 HttpListenerResponse response = context.Response;

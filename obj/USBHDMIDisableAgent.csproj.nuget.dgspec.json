@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\USBHDMIDisableAgent.csproj": {}
+    "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\USBHDMIDisableAgent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\USBHDMIDisableAgent.csproj": {
+    "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\USBHDMIDisableAgent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\USBHDMIDisableAgent.csproj",
+        "projectUniqueName": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\USBHDMIDisableAgent.csproj",
         "projectName": "USBHDMIDisableAgent",
-        "projectPath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\USBHDMIDisableAgent.csproj",
+        "projectPath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\USBHDMIDisableAgent.csproj",
         "packagesPath": "C:\\Users\\JoãoPedroSilvaMassar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\USBHDMIDisableAgent\\obj\\",
+        "outputPath": "C:\\Users\\JoãoPedroSilvaMassar\\Documents\\POC-MA\\usbhdmi-disable-agent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\JoãoPedroSilvaMassar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,11 +34,22 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "System.Management": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
