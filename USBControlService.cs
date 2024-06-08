@@ -5,67 +5,53 @@ namespace USBStateProgram
 {
     public class USBControlService
     {
+        private const string USBHUB3KeyName = @"SYSTEM\CurrentControlSet\Services\USBHUB3";
+
         public void DisableUSB()
         {
-            var keynames = new[] { @"SYSTEM\CurrentControlSet\Services\USBSTOR", 
-                @"SYSTEM\CurrentControlSet\Services\USBHUB3", 
-                @"SYSTEM\CurrentControlSet\Services\usbhub" };
-
-            foreach (var keyName in keynames)
+            try
             {
-                try
+                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(USBHUB3KeyName, true))
                 {
-                    using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyName, true))
+                    if (key != null)
                     {
-                        if (key != null)
-                        {
-                            key.SetValue("Start", 4, RegistryValueKind.DWord);
-                        }
+                        key.SetValue("Start", 4, RegistryValueKind.DWord);
                     }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro ao desabilitar {keyName}: {ex.Message}");
-                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao desabilitar USBHUB3: {ex.Message}");
             }
 
-            Console.WriteLine("USB Desabilitado");
+            Console.WriteLine("USBHUB3 desabilitado");
         }
 
         public void EnableUSB()
         {
-            var keynames = new[] { @"SYSTEM\CurrentControlSet\Services\USBSTOR", 
-                @"SYSTEM\CurrentControlSet\Services\USBHUB3", 
-                @"SYSTEM\CurrentControlSet\Services\usbhub" };
-
-            foreach (var keyName in keynames)
+            try
             {
-                try
+                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(USBHUB3KeyName, true))
                 {
-                    using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyName, true))
+                    if (key != null)
                     {
-                        if (key != null)
-                        {
-                            key.SetValue("Start", 3, RegistryValueKind.DWord);
-                        }
+                        key.SetValue("Start", 3, RegistryValueKind.DWord);
                     }
                 }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Erro ao habilitar {keyName}: {ex.Message}");
-                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao habilitar USBHUB3: {ex.Message}");
             }
 
-            Console.WriteLine("USB Habilitado");
+            Console.WriteLine("USBHUB3 habilitado");
         }
 
         public string GetUSBHUB3Start()
         {
-            var keyName = @"SYSTEM\CurrentControlSet\Services\USBHUB3";
-
             try
             {
-                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(keyName, true))
+                using (RegistryKey key = Registry.LocalMachine.OpenSubKey(USBHUB3KeyName, true))
                 {
                     if (key != null)
                     {
@@ -76,7 +62,7 @@ namespace USBStateProgram
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao buscar o início de {keyName}: {ex.Message}");
+                Console.WriteLine($"Erro ao buscar o valor inicial de USBHUB3: {ex.Message}");
             }
 
             return "Falha ao acessar o sistema";
