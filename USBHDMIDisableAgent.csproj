@@ -10,6 +10,7 @@
     <Compile Remove="System.Net.cs" />
     <Compile Remove="USBManager.cs" />
     <Compile Remove="USBStateProgram.cs" />
+    <Compile Remove=".gitignore.cs" />
   </ItemGroup>
 
 </Project>
